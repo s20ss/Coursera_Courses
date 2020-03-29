@@ -1,4 +1,4 @@
-public class SimplifiedArithmeticPart1 {
+public class Part1 {
     public String findSimpleGene(String dna){
         int startindex=dna.indexOf("ATG");
         if(startindex==-1){
@@ -17,11 +17,11 @@ public class SimplifiedArithmeticPart1 {
         }
     }
     public void testSimpleGene(){
-        String dna1="AAAATAMGNABETAA";
-        String dna2="ATGBDSHAITRSNDFKHFUIWBDFIWSHDNSMFHIERNMSFIERHNSMFNIEFHFF";
-        String dna3="sdfhsfbgjfbbfsjgiwhiiehirhifgkbxvbsfjkbgvkfg";
-        String dna4="ATG123456789TAA";
-        String dna5="ATG12345678TAA";
+        String dna1="GGGAATTGGTAA";
+        String dna2="ATGGGAATTAASATTGGAA";
+        String dna3="AAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        String dna4="ATGTTTTAA";
+        String dna5="ATGTTTAAAGGTAA";
         System.out.println("DNA 1 "+findSimpleGene(dna1));
 
         System.out.println("DNA 1 "+findSimpleGene(dna2));
@@ -33,7 +33,7 @@ public class SimplifiedArithmeticPart1 {
 
     }
     public static  void main(String[] args){
-        SimplifiedArithmeticPart1 sa=new SimplifiedArithmeticPart1();
+        Part1 sa=new Part1();
         sa.testSimpleGene();
     }
 }
