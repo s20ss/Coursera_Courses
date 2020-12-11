@@ -1,0 +1,1 @@
+'''No such code to write'''
